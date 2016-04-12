@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SystemJS test</title>
+</head>
+
+<body>
+    <br />
+    <h1>SystemJS Babel test</h1>
+    <div id="main"></div>
+    <br />
+    <script src="../node_modules/systemjs/dist/system.js"></script>
+    <script>
+    System.config({
+        transpiler: "plugin-babel",
+        map: {
+            "plugin-babel": "../node_modules/systemjs-plugin-babel/plugin-babel.js",
+            'systemjs-babel-build': '../node_modules/systemjs-plugin-babel/systemjs-babel-browser.js'
+        }
+    });
+    System.import('js/app.js');
+    </script>
+</body>
+
+</html>

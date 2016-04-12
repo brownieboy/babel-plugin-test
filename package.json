@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Michael Brown <brownieboy@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "^0.19.26",
+    "systemjs-plugin-babel": "0.0.9"
+  }
+}
